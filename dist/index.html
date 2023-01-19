@@ -19,15 +19,38 @@
 </head>
 <body>
     <header>
-        <img id="logo" src="/images/logo.svg" alt="Logo">
-        <div id="nav-cont">
-            <ul>
-                <li>01. About</li>
-                <li>02. Work</li>
-                <li>03. Contact</li>
+        <a href=""><img id="logo" src="/images/logo.svg" alt="Logo"></a>
+
+        <div id="nav-container">
+            <ul class="side-text" id="nav" role="list">
+                <a href=""><li><span class="list-num side-text">01. </span>About</li></a>
+                <a href=""><li><span class="list-num side-text">02. </span>Work</li></a>
+                <a href=""><li><span class="list-num side-text">03. </span>Contact</li></a>
             </ul>
         </div>
     </header>
+
+    <div id="content">
+        <div id="left-pannel"></div>
+        <div id="main-content">
+            <div class="section">
+                <div id="intro-text-cont">
+                    <div>
+                        <h1 class="side-text">Hi, my name is</h1>
+                    </div>
+                    <div>
+                        <h2 class="main-text big-heading">Facundo Meniy.</h2>
+                    </div>
+                    <div>
+                        <h3 class="main-text big-heading">I build things for the web.</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="spacing"></div>
+            <div class="section"></div>
+        </div>
+        <div id="right-pannel"></div>
+    </div>
     
     <script src="/src/app.js"></script>
 </body>
