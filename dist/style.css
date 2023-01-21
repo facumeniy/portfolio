@@ -369,6 +369,10 @@ h3{
   right: 170px;
 }
 
+.line-height{
+  line-height: 1.3;
+}
+
 .section{
     width: 100%;
     height: 85vh;
@@ -384,6 +388,7 @@ h3{
   width: 100%;
   height: 110vh;
   max-height: 110vh;
+  margin-bottom: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -394,6 +399,9 @@ h3{
 .spacing{
     width: 100%;
     height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 2px solid blue;
 }
 
@@ -642,7 +650,7 @@ h3{
   height: 280px;
   width: 280px;
   max-width: 280px;
-  padding: 10px;
+  padding: 30px 20px;
   border-radius: 4px;
   display: flex;
   flex-direction: column;
@@ -653,7 +661,7 @@ h3{
 
 .other-project-icons{
   width: 100%;
-  padding: 10px;
+  margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -664,17 +672,48 @@ h3{
   width: 40px;
 }
 
-.other-project-external{
-  width: 25px;
-}
-
-.other-project-title{
-  width: 100%;
-  height: 50px;
-  padding: 10px;
+.other-project-links{
+  width: 65px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  border: 1px solid white;
+}
+
+.other-project-github{
+  width: 28px;
+}
+
+.other-project-external{
+  width: 23px;
+}
+
+.other-project-section{
+  width: 100%;
+  margin: 5px 0px;
+  display: flex;
   border: 1px solid blue;
+}
+
+.other-project-desc{
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.other-project-technologies{
+  width: 100%;
+  margin: 5px 0px;
+  display: flex;
+  border: 1px solid blue;
+}
+
+.other-project-list{
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.other-project-list li{
+  margin: 0px 8px;
 }
 
