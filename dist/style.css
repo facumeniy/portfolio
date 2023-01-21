@@ -291,7 +291,7 @@ h3{
 }
 
 #other-projects-container{
-  width: 95%;
+  width: 83%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -629,9 +629,52 @@ h3{
   width: 25px;
 }
 
-.project-row{
+.other-projects-row{
   height: 100%;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   border: 1px solid white;
+}
+
+.other-projects-card{
+  height: 280px;
+  width: 280px;
+  max-width: 280px;
+  padding: 10px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #264b86;
+}
+
+.other-project-icons{
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border: 1px solid red;
+}
+
+.other-project-folder{
+  width: 40px;
+}
+
+.other-project-external{
+  width: 25px;
+}
+
+.other-project-title{
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border: 1px solid blue;
 }
 
