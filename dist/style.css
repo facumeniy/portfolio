@@ -292,6 +292,9 @@ h3{
 
 
 
+
+
+
 /* CLASSES */
 .main-text{
   font-family: 'Roboto', sans-serif;
@@ -315,6 +318,15 @@ h3{
 
 .accent{
   color: #00e9d8;
+}
+
+.small{
+  font-size: 13px;
+}
+
+.medium{
+  font-size: 25px;
+  font-weight: 600;
 }
 
 .section{
@@ -409,3 +421,161 @@ h3{
 .tool-icon{
   height: 60%;
 }
+
+.tool-icons-container-two{
+  padding: 0px 20px;
+  width: 100%;
+  height: 80px;
+  min-height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+}
+
+.tool-icon-two{
+  margin: 0px 30px;
+  height: 60%;
+}
+
+.tool-names-container-two{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid red;
+}
+
+.tool-name-cont-two{
+  margin: 0px 10px;
+  width: 85px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-container{
+  height: 100%;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid red;
+}
+
+.project-content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid yellow;
+}
+
+.project-display{
+  width: 575px;
+  height: 350px;
+  position: absolute;
+  z-index: -2;
+  background-color: rgb(117, 0, 0);
+}
+
+.project-desc{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid white;
+}
+
+.project-overline{
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid red;
+}
+
+.project-title{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid red;
+}
+
+.project-description{
+  width: 100%;
+  height: 125px;
+  padding: 20px;
+  text-align: right;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: #1b3153;
+}
+
+.project-tech-list{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid red;
+}
+
+.project-tech{
+  height: 100%;
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid white;
+}
+
+.project-list{
+  border: 1px solid green;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-list li{
+  display: inline-block;
+}
+
+.project-links{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid red;
+}
+
+.icon-links{
+  height: 100%;
+  width: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid purple;
+}
+
+.link-icon-github{
+  width: 35px;
+}
+
+.link-icon-external{
+  width: 30px;
+}
+
