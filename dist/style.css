@@ -128,6 +128,7 @@ header{
     width: 42px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     filter: invert(27%) sepia(58%) saturate(6575%) hue-rotate(337deg) brightness(99%) contrast(94%);
+    animation: logo-load 1.5s;
 }
 
 /* #nav-container{
@@ -792,7 +793,8 @@ h3{
 
 /* HOVERS */
 #about-nav{
-  transition: all 0.5s;
+  transition: nav1load 0.5s;
+  animation: header-load 2s;
 }
 #about-nav:hover{
   color: #00e9d8;
@@ -894,4 +896,28 @@ h3{
 }
 .other-project-external:hover{
   filter: sepia(61%) saturate(5129%) hue-rotate(94deg) brightness(91%) contrast(101%);
+}
+
+
+
+/* KEYFRAMES */
+@keyframes logo-load{
+  0%{
+    opacity: 0;
+  }
+  75%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes item-load-1{
+  0%{
+    transform: translateY(-100%);
+  }
+  100%{
+    transform: translateY(0);
+  }
 }
