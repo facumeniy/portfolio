@@ -1,3 +1,27 @@
+::-moz-selection {
+  color: #CCD6F6;
+  background: #274064b7;
+}
+::selection {
+  color: #CCD6F6;
+  background: #274064b7;
+}
+::-webkit-scrollbar {
+  padding: 10px;
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  border: 2px solid #0A192F;
+  background-color: #505770;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #0A192F;
+}
 /*
   1. Use a more-intuitive box-sizing model.
 */
@@ -83,7 +107,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 body{
-    background-color: #031127;
+    background-color: #0A192F;
 }
 
 header{
@@ -122,7 +146,8 @@ header{
 #nav li{
     font-size: 13px;
     display: inline-block;
-    color: white;
+    color: #b8bfd1;
+    font-weight: 400;
     border: 1px solid yellow;
 }
 
@@ -158,24 +183,6 @@ header{
   justify-content: flex-end;
   align-items: center;
   border: 1px solid white;
-}
-
-#github-sidebar{
-  width: 30px;
-}
-
-#ig-sidebar{
-  width: 25px;
-}
-
-#linkedin-sidebar{
-  width: 22px;
-}
-
-#side-email{
-  transform: rotate(90deg);
-  font-weight: 400;
-  margin-bottom: 75px;
 }
 
 #main-content{
@@ -354,7 +361,7 @@ h3{
 
 #footer-content{
   height: 100%;
-  width: 250px;
+  width: 350px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -362,14 +369,10 @@ h3{
   border: 1px solid white;
 }
 
-
-
-
-
-
-
-
-
+.footer-link{
+  display: inline-block;
+  color: #00e9d8;
+}
 
 
 
@@ -387,19 +390,19 @@ h3{
 
 .side-text{
   font-family: 'Fira Code', monospace;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .primary{
-  color: white;
+  color: #CCD6F6;
 }
 
 .secondary{
-  color: #78a1bb;
+  color: #8892B0;
 }
 
 .accent{
-  color: #00e9d8;
+  color: #56e2cb;
 }
 
 .small{
@@ -416,7 +419,7 @@ h3{
 }
 
 .align-left{
-  text-align: leftt;
+  text-align: left;
 }
 
 .display-right{
@@ -434,7 +437,12 @@ h3{
   margin-top: 25px;
 }
 
+.select-none{
+  user-select: none;
+}
+
 .section{
+    min-width: 100%;
     width: 100%;
     height: 85vh;
     max-height: 85vh;
@@ -699,14 +707,6 @@ h3{
   border: 1px solid purple;
 }
 
-.link-icon-github{
-  width: 32px;
-}
-
-.link-icon-external{
-  width: 25px;
-}
-
 .other-projects-row{
   height: 100%;
   width: 100%;
@@ -714,19 +714,6 @@ h3{
   justify-content: space-between;
   align-items: center;
   border: 1px solid white;
-}
-
-.other-projects-card{
-  height: 280px;
-  width: 280px;
-  max-width: 280px;
-  padding: 30px 20px;
-  border-radius: 4px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  background-color: #264b86;
 }
 
 .other-project-icons{
@@ -740,6 +727,7 @@ h3{
 
 .other-project-folder{
   width: 40px;
+  filter: sepia(61%) saturate(5129%) hue-rotate(94deg) brightness(91%) contrast(90%);
 }
 
 .other-project-links{
@@ -747,14 +735,6 @@ h3{
   display: flex;
   justify-content: space-between;
   border: 1px solid white;
-}
-
-.other-project-github{
-  width: 28px;
-}
-
-.other-project-external{
-  width: 23px;
 }
 
 .other-project-section{
@@ -787,3 +767,131 @@ h3{
   margin: 0px 8px;
 }
 
+/* INPUTS */
+.button{
+  border: 1px solid #00e9d8;
+  color: #00e9d8;
+  background-color: #00000000;
+  padding: 15px 25px;
+  border-radius: 4px;
+  font-family: 'Fira Code', monospace;
+  font-size: 13px;
+  font-weight: 300;
+  transition: all 0.3s;
+}
+.button:hover{
+  cursor: pointer;
+  background-color: #00e9da27;
+}
+
+
+
+
+
+
+
+/* HOVERS */
+#about-nav{
+  transition: all 0.5s;
+}
+#about-nav:hover{
+  color: #00e9d8;
+}
+#tools-nav{
+  transition: all 0.5s;
+}
+#tools-nav:hover{
+  color: #00e9d8;
+}
+#work-nav{
+  transition: all 0.5s;
+}
+#work-nav:hover{
+  color: #00e9d8;
+}
+#contact-nav{
+  transition: all 0.5s;
+}
+#contact-nav:hover{
+  color: #00e9d8;
+}
+
+.sidebar-icon{
+  filter: sepia(9%) saturate(937%) hue-rotate(187deg) brightness(70%) contrast(83%);
+  transition: all 0.5s;
+}
+.sidebar-icon:hover{
+  filter: sepia(61%) saturate(5129%) hue-rotate(94deg) brightness(91%) contrast(101%);
+  transform: translateY(-5px);
+}
+#github-sidebar{
+  width: 30px;
+}
+#ig-sidebar{
+  width: 25px;
+}
+#linkedin-sidebar{
+  width: 22px;
+}
+#side-email{
+  writing-mode: vertical-lr;
+  font-weight: 400;
+  margin-bottom: 0px;
+  transition: all 0.5s;
+}
+#side-email:hover{
+  transform: translateY(-5px);
+  color: #00e9d8;
+}
+
+.link-icon-github{
+  width: 32px;
+  filter: sepia(9%) saturate(937%) hue-rotate(187deg) brightness(70%) contrast(83%);
+  transition: all 0.5s;
+}
+.link-icon-github:hover{
+  filter: sepia(61%) saturate(5129%) hue-rotate(94deg) brightness(91%) contrast(101%);
+  width: 32px;
+}
+.link-icon-external{
+  width: 25px;
+  filter: sepia(9%) saturate(937%) hue-rotate(187deg) brightness(70%) contrast(83%);
+  transition: all 0.5s;
+}
+.link-icon-external:hover{
+  filter: sepia(61%) saturate(5129%) hue-rotate(94deg) brightness(91%) contrast(101%);
+}
+.other-projects-card{
+  height: 280px;
+  width: 280px;
+  max-width: 280px;
+  padding: 30px 20px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #112240;
+  transition: all 0.3s ease-out;
+}
+.other-projects-card:hover{
+  transform: translateY(-5px);
+}
+
+
+.other-project-github{
+  width: 28px;
+  filter: sepia(9%) saturate(937%) hue-rotate(187deg) brightness(90%) contrast(83%);
+  transition: all 0.5s;
+}
+.other-project-github:hover{
+  filter: sepia(61%) saturate(5129%) hue-rotate(94deg) brightness(91%) contrast(101%);
+}
+.other-project-external{
+  width: 23px;
+  filter: sepia(9%) saturate(937%) hue-rotate(187deg) brightness(90%) contrast(83%);
+  transition: all 0.5s;
+}
+.other-project-external:hover{
+  filter: sepia(61%) saturate(5129%) hue-rotate(94deg) brightness(91%) contrast(101%);
+}
