@@ -128,7 +128,6 @@ header{
     width: 42px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     filter: invert(27%) sepia(58%) saturate(6575%) hue-rotate(337deg) brightness(99%) contrast(94%);
-    animation: logo-load 1.5s;
 }
 
 /* #nav-container{
@@ -793,8 +792,7 @@ h3{
 
 /* HOVERS */
 #about-nav{
-  transition: nav1load 0.5s;
-  animation: header-load 2s;
+  transition: all 0.5s;
 }
 #about-nav:hover{
   color: #00e9d8;
@@ -899,7 +897,44 @@ h3{
 }
 
 
-
+/* ANIMATIONS */
+#logo{
+  animation: logo-load 1.5s;
+}
+#about-nav{
+  transition: all 0.5s;
+  animation: navitemload 2.1s;
+}
+#tools-nav{
+  transition: all 0.5s;
+  animation: navitemload 2.2s;
+}
+#work-nav{
+  transition: all 0.5s;
+  animation: navitemload 2.3s;
+}
+#contact-nav{
+  transition: all 0.5s;
+  animation: navitemload 2.4s;
+}
+#greet{
+  animation: itemload 3.2s;
+}
+#name{
+  animation: itemload 3.3s;
+}
+#big-heading{
+  animation: itemload 3.4s;
+}
+#desc{
+  animation: itemload 3.5s;
+}
+#left-pannel{
+  animation: sidebarload 4s;
+}
+#right-pannel{
+  animation: sidebarload 4.2s;
+}
 /* KEYFRAMES */
 @keyframes logo-load{
   0%{
@@ -913,11 +948,42 @@ h3{
   }
 }
 
-@keyframes item-load-1{
+@keyframes navitemload{
   0%{
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  75%{
+    opacity: 0;
     transform: translateY(-100%);
   }
   100%{
     transform: translateY(0);
+  }
+}
+
+@keyframes itemload{
+  0%{
+    opacity: 0;
+    transform: translateY(30%);
+  }
+  75%{
+    opacity: 0;
+    transform: translateY(30%);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+
+@keyframes sidebarload{
+  0%{
+    opacity: 0;
+  }
+  75%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
   }
 }
