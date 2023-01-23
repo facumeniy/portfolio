@@ -1,9 +1,9 @@
 ::-moz-selection {
-  color: #CCD6F6;
+  color: #d5dbf1;
   background: #274064b7;
 }
 ::selection {
-  color: #CCD6F6;
+  color: #d5dbf1;
   background: #274064b7;
 }
 ::-webkit-scrollbar {
@@ -563,6 +563,7 @@ h3{
 }
 
 .tool-icon{
+  filter: sepia(6%) saturate(1398%) hue-rotate(188deg) brightness(86%) contrast(81%);
   height: 60%;
 }
 
@@ -578,6 +579,7 @@ h3{
 }
 
 .tool-icon-two{
+  filter: sepia(6%) saturate(1398%) hue-rotate(188deg) brightness(86%) contrast(81%);
   margin: 0px 30px;
   height: 60%;
 }
@@ -625,6 +627,7 @@ h3{
   position: absolute;
   z-index: -2;
   border-radius: 4px;
+  box-shadow: 0 10px 30px -15px #000;
   background-color: rgb(117, 0, 0);
 }
 
@@ -663,7 +666,9 @@ h3{
   align-items: center;
   font-size: 14px;
   font-weight: 400;
-  background-color: #1b3153;
+  background-color: #112240;
+  border-radius: 4px;
+  box-shadow: 0 10px 30px -15px #000;
 }
 
 .project-tech-list{
@@ -883,9 +888,11 @@ h3{
   align-items: center;
   background-color: #112240;
   transition: all 0.3s ease-out;
+  box-shadow: 0 10px 30px -15px #000000a2;
 }
 .other-projects-card:hover{
   transform: translateY(-5px);
+  box-shadow: 0 15px 40px -15px #000000a2;
 }
 
 
@@ -947,6 +954,16 @@ h3{
 }
 #right-pannel{
   animation: sidebarload 4.2s;
+}
+
+.nav-scrolled{
+  transform: translateY(-100%);
+  transition: all 500ms;
+}
+
+.nav-unscrolled{
+  transform: translateY(0%);
+  transition: all 500ms;
 }
 /* KEYFRAMES */
 @keyframes logo-load{
