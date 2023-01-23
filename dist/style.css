@@ -219,6 +219,7 @@ h3{
 
 #desc-cont{
   margin-top: 20px;
+  margin-bottom: 50px;
   width: 540px;
 }
 
@@ -769,8 +770,8 @@ h3{
 
 /* INPUTS */
 .button{
-  border: 1px solid #00e9d8;
-  color: #00e9d8;
+  border: 1px solid #60d6ce;
+  color: #60d6ce;
   background-color: #00000000;
   padding: 15px 25px;
   border-radius: 4px;
@@ -929,6 +930,9 @@ h3{
 #desc{
   animation: itemload 3.5s;
 }
+#main-btn{
+  animation: itemload 3.6s;
+}
 #left-pannel{
   animation: sidebarload 4s;
 }
@@ -986,4 +990,12 @@ h3{
   100%{
     opacity: 1;
   }
+}
+
+.fade-in{
+  opacity: 0;
+  transition: opacity 200ms ease-in;
+}
+.fade-in.appear{
+  opacity: 1;
 }
