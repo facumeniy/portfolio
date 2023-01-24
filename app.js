@@ -66,13 +66,13 @@ window.addEventListener("scroll", function(){
         timeout = setTimeout(function(){
             header.classList.remove('nav-unscrolled');
             header.classList.add('nav-scrolled');
-        }, 500);
+        }, 300);
     } else {
         clearTimeout(timeout);
         timeout = setTimeout(function(){
             header.classList.remove('nav-scrolled');
             header.classList.add('nav-unscrolled');
-        }, 500);
+        }, 300);
     }
     lastScrollTop = scrollTop;
  }, false);
