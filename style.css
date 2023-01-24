@@ -321,7 +321,7 @@ h3{
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -455,16 +455,15 @@ h3{
     border: 2px solid yellow;
 }
 
-.large-section{
+.tools-section{
+  min-width: 100%;
   width: 100%;
-  height: 110vh;
-  max-height: 110vh;
-  margin-bottom: 50px;
+  height: 67vh;
+  max-height: 67vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px solid yellow;
 }
 
 .spacing{
