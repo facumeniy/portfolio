@@ -193,15 +193,14 @@ header{
 }
 
 #intro-text-cont{
-    width: 1000px;
-    height: 550px;
-    margin-top: 50px;
-    border: 1px solid white;
+  padding-right: 200px;
+  padding-top: 10px;
+  height: 550px;
+  margin-top: 50px;
+  border: 1px solid white;
 }
 
-#name-cont{
-  height: 110px;
-}
+
 
 h1{
     margin-left: 5px;
@@ -232,9 +231,9 @@ h3{
 
 #about-container{
   display: flex;
+  width: 900px;
   flex-direction: column;
-  border: 5px solid purple;
-  width: 60%;
+  border: 1px solid purple;
 }
 
 #about-content{
@@ -1024,4 +1023,12 @@ h3{
 }
 .fade-in.appear{
   opacity: 1;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 1301px) {
+  #intro-text-cont {
+    padding: 0;
+    border: 1px solid white;
+  }
 }
