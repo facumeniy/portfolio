@@ -56,20 +56,27 @@ contact.addEventListener('click', () => {
 
 // HEADER HIDING
 const header = document.querySelector('.header');
-const firstDiv = document.getElementById('first-div');
+var lastScrollTop = 0;
+var timeout;
 
-const firstDivOptions = {};
-
-const firstDivObserver = new IntersectionObserver(function(entries, firstDivObserver) {
-    entries.forEach(entry => {
-        if(!entry.isIntersecting){
+window.addEventListener("scroll", function(){
+    var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    if (scrollTop > lastScrollTop){
+        clearTimeout(timeout);
+        timeout = setTimeout(function(){
             header.classList.remove('nav-unscrolled');
             header.classList.add('nav-scrolled');
-        }else{
+        }, 500);
+    } else {
+        clearTimeout(timeout);
+        timeout = setTimeout(function(){
             header.classList.remove('nav-scrolled');
             header.classList.add('nav-unscrolled');
-        }
-    })
-}, firstDivOptions);
+        }, 500);
+    }
+    lastScrollTop = scrollTop;
+ }, false);
 
-firstDivObserver.observe(firstDiv);
+
+
+
