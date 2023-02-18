@@ -193,9 +193,6 @@ header{
 }
 
 #intro-text-cont{
-  padding-right: 200px;
-  padding-top: 10px;
-  height: 550px;
   margin-top: 50px;
   border: 1px solid white;
 }
@@ -1016,13 +1013,18 @@ h3{
 }
 
 /* MEDIA QUERIES */
-@media (max-width: 1375px) {
-  .empty{
-    display: none;
+@media (max-width: 1140px) {
+  #about-container{
+    width: 700px;
+  }
+  .portrait{
+    width: 250px;
+    height: 250px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 950px) {
+
   #left-pannel{
     display: none;
   }
@@ -1032,5 +1034,4 @@ h3{
   #contact-container{
     width: 400px;
   }
-
 }
