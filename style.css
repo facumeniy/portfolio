@@ -580,6 +580,10 @@ h3{
   background-color: rgb(117, 0, 0);
 }
 
+#first-project{
+  background-color: #000;
+}
+
 .project-desc{
   width: 50%;
   height: 100%;
