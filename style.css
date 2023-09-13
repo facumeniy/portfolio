@@ -123,10 +123,9 @@ header{
 }
 
 #logo{
-    height: 42px;
-    width: 42px;
+    height: 70px;
+    width: 70px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    filter: invert(27%) sepia(58%) saturate(6575%) hue-rotate(337deg) brightness(99%) contrast(94%);
 }
 
 /* #nav-container{
@@ -581,34 +580,51 @@ h3{
 }
 
 #first-project{
-  background-color: #000;
+  background-image: url(https://facumeniy.github.io/portfolio/images/weatherapp-preview.jpg);
+  background-size: cover;
+
+}
+
+#second-project{
+  background-image: url(https://facumeniy.github.io/portfolio/images/spaceX-preview.jpg);
+  background-size: cover;
+}
+
+#third-project{
+  background-image: url(https://facumeniy.github.io/portfolio/images/etchasketch-preview.jpg);
+  background-size: cover;
+  filter: sepia(100%) grayscale(100%) saturate(400%);
 }
 
 .project-desc{
   width: 50%;
-  height: 100%;
+  height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: 1px solid white;
+  background-color: #0f1d35dd;
+  box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.30);
+  -webkit-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.30);
+-moz-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.30);
+  border-radius: 5px;
 }
 
 .project-overline{
   width: 100%;
   height: 30px;
+  padding: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 2px solid red;
 }
 
 .project-title{
   width: 100%;
   height: 50px;
+  padding: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 2px solid red;
 }
 
 .project-description{
@@ -626,20 +642,19 @@ h3{
 .project-tech-list{
   height: 50px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
-  border: 2px solid red;
+  padding-left: 15px;
 }
 
 .project-tech{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid white;
+  padding-right: 5px;
 }
 
 .project-list{
-  border: 1px solid green;
   padding: 0;
   width: 100%;
   display: flex;
@@ -654,19 +669,19 @@ h3{
 .project-links{
   width: 100%;
   height: 50px;
+  padding: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 2px solid red;
 }
 
 .icon-links{
   height: 100%;
-  width: 70px;
+  width: 90px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
-  border: 1px solid purple;
+  border: 0px solid purple;
 }
 
 .other-projects-row{
@@ -819,6 +834,7 @@ h3{
   width: 32px;
 }
 .link-icon-external{
+  margin: 0px 10px;
   width: 25px;
   filter: sepia(9%) saturate(937%) hue-rotate(187deg) brightness(70%) contrast(83%);
   transition: all 0.5s;
