@@ -681,7 +681,6 @@ h3{
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  border: 0px solid purple;
 }
 
 .other-projects-row{
@@ -690,7 +689,6 @@ h3{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid white;
 }
 
 .other-project-icons{
@@ -699,7 +697,6 @@ h3{
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  border: 1px solid red;
 }
 
 .other-project-folder{
@@ -718,19 +715,18 @@ h3{
   width: 100%;
   margin: 5px 0px;
   display: flex;
-  border: 1px solid blue;
 }
 
 .other-project-desc{
   font-size: 15px;
   font-weight: 400;
+  margin-bottom: 60px;
 }
 
 .other-project-technologies{
   width: 100%;
   margin: 5px 0px;
   display: flex;
-  border: 1px solid blue;
 }
 
 .other-project-list{
