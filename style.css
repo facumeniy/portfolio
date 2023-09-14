@@ -581,19 +581,21 @@ h3{
 
 #first-project{
   background-image: url(https://facumeniy.github.io/portfolio/images/weatherapp-preview.jpg);
-  background-size: cover;
+  background-size: 127%;
+  background-position: center;
 
 }
 
 #second-project{
   background-image: url(https://facumeniy.github.io/portfolio/images/spaceX-preview.jpg);
-  background-size: cover;
+  background-size: 127%;
+  background-position: center;
 }
 
 #third-project{
   background-image: url(https://facumeniy.github.io/portfolio/images/etchasketch-preview.jpg);
-  background-size: cover;
-  filter: sepia(100%) grayscale(100%) saturate(400%);
+  background-size: 127%;
+  background-position: center;
 }
 
 .project-desc{
