@@ -267,19 +267,9 @@ h3{
   background-image: url(https://facumeniy.github.io/portfolio/images/portrait.png);
   background-size: cover;
   background-position: center;
-  border-radius: 4px;
   position: relative;
-}
-
-.portrait-border{
-  height: 300px;
-  width: 300px;
-  position: absolute;
-  z-index: -1;
-  top: 20px;
-  left: 20px;
   border: 2px solid #00e9d8;
-  border-radius: 4px;
+  border-radius: 100%;
 }
 
 #tools-container{
@@ -583,7 +573,6 @@ h3{
   background-image: url(https://facumeniy.github.io/portfolio/images/weatherapp-preview.jpg);
   background-size: 127%;
   background-position: center;
-
 }
 
 #second-project{
